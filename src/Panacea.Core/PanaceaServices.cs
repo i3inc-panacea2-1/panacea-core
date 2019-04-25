@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Panacea.Core
 {
-    public class PanaceaServices
+    public sealed class PanaceaServices
     {
         public PanaceaServices(
             IUserService userService,
