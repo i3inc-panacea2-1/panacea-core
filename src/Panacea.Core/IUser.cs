@@ -2,6 +2,7 @@
 
 namespace Panacea.Core
 {
+
     public interface IUser
     {
         string FirstName { get; }
