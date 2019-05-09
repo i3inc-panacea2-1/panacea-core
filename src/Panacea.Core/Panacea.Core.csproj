@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\HttpWebRequestExtension.cs" />
     <Compile Include="IHttpClient.cs" />
     <Compile Include="IPluginLoader.cs" />
     <Compile Include="ISerializer.cs" />
