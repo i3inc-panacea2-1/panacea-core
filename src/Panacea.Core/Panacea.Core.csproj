@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\HttpWebRequestExtension.cs" />
+    <Compile Include="HttpServiceBase.cs" />
     <Compile Include="IHttpClient.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="IPluginLoader.cs" />
