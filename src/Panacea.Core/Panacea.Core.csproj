@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Extensions\HttpWebRequestExtension.cs" />
     <Compile Include="IHttpClient.cs" />
+    <Compile Include="ILogger.cs" />
     <Compile Include="IPluginLoader.cs" />
     <Compile Include="ISerializer.cs" />
     <Compile Include="ISettingsProvider.cs" />
