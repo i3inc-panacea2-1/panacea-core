@@ -22,7 +22,4 @@ namespace Panacea.Core
 
     public delegate Task UserEvent(IUser user);
 
-    public class AsyncEventHandler : EventHandler
-    {
-    }
 }
