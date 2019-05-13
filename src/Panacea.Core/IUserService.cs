@@ -21,4 +21,5 @@ namespace Panacea.Core
     }
 
     public delegate Task UserEvent(IUser user);
+
 }

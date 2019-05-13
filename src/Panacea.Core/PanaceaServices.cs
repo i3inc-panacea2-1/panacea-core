@@ -9,9 +9,11 @@ namespace Panacea.Core
     public sealed class PanaceaServices
     {
         public PanaceaServices(
+            IHttpClient client,
             IUserService userService,
             IPluginLoader pluginLoader)
         {
+            HttpClient = client;
             UserService = userService;
             PluginLoader = pluginLoader;
         }
@@ -19,6 +21,8 @@ namespace Panacea.Core
         public IUserService UserService { get; }
 
         public IPluginLoader PluginLoader { get; }
+
+        public IHttpClient HttpClient { get; }
 
     }
 }
