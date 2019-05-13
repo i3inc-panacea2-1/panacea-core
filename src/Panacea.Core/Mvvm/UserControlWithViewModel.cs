@@ -29,7 +29,7 @@ namespace Panacea.Core.Mvvm
         // Using a DependencyProperty as the backing store for MyProperty.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty ViewModelProperty =
             DependencyProperty.Register("ViewModel", typeof(ViewModelBase), 
-                typeof(UserControlWithViewModel<>), new PropertyMetadata(null));
+                typeof(UserControlWithViewModel<T>), new PropertyMetadata(null));
 
         public ViewModelBase GetViewModel()
         {
