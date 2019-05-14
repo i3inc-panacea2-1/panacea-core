@@ -62,11 +62,11 @@
     <Compile Include="ISettingsProvider.cs" />
     <Compile Include="IUserService.cs" />
     <Compile Include="Mvvm\LifeCycleBehaviors.cs" />
+    <Compile Include="Mvvm\ViewAttribute.cs" />
     <Compile Include="PanaceaServices.cs" />
     <Compile Include="PluginNotLoadedException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IUser.cs" />
-    <Compile Include="Mvvm\UserControlWithViewModel.cs" />
     <Compile Include="Mvvm\ViewModelBase.cs" />
   </ItemGroup>
   <ItemGroup>

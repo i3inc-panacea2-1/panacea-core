@@ -39,18 +39,18 @@ namespace Panacea.Core.Mvvm
 
         private static void C_Unloaded(object sender, RoutedEventArgs e)
         {
-            var c = sender as IContainsViewModel;
+            var c = sender as FrameworkElement;
             if (c == null) return;
-            var vm = c.GetViewModel() as ViewModelBase;
+            var vm = c.DataContext as ViewModelBase;
             if (vm == null) return;
             vm.Deactivate();
         }
 
         private static void C_Loaded(object sender, RoutedEventArgs e)
         {
-            var c = sender as IContainsViewModel;
+            var c = sender as FrameworkElement;
             if (c == null) return;
-            var vm = c.GetViewModel() as ViewModelBase;
+            var vm = c.DataContext as ViewModelBase;
             if (vm == null) return;
             vm.Activate();
         }
