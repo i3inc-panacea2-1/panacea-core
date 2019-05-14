@@ -23,14 +23,17 @@ namespace Panacea.Core.Mvvm
 
         }
 
-        public virtual FrameworkElement GetView()
+        public virtual FrameworkElement View
         {
-            if (_view != null) return _view;
-            var type = GetViewType();
-            _view = Activator.CreateInstance(type) as FrameworkElement;
-            _view.DataContext = this;
-            _view.SetValue(LifeCycleBehaviors.AutoWireEventsProperty, true);
-            return _view;
+            get
+            {
+                if (_view != null) return _view;
+                var type = GetViewType();
+                _view = Activator.CreateInstance(type) as FrameworkElement;
+                _view.DataContext = this;
+                _view.SetValue(LifeCycleBehaviors.AutoWireEventsProperty, true);
+                return _view;
+            }
         }
 
         public virtual Type GetViewType()
