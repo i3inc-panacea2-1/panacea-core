@@ -12,7 +12,7 @@ namespace Panacea.Core.Mvvm
     public abstract class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-
+        private FrameworkElement _view;
         public virtual void Activate()
         {
 
@@ -25,11 +25,12 @@ namespace Panacea.Core.Mvvm
 
         public virtual FrameworkElement GetView()
         {
+            if (_view != null) return _view;
             var type = GetViewType();
-            var view = Activator.CreateInstance(type) as FrameworkElement;
-            view.DataContext = this;
-            view.SetValue(LifeCycleBehaviors.AutoWireEventsProperty, true);
-            return view;
+            _view = Activator.CreateInstance(type) as FrameworkElement;
+            _view.DataContext = this;
+            _view.SetValue(LifeCycleBehaviors.AutoWireEventsProperty, true);
+            return _view;
         }
 
         public virtual Type GetViewType()
