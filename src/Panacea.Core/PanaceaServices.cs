@@ -11,11 +11,13 @@ namespace Panacea.Core
         public PanaceaServices(
             IHttpClient client,
             IUserService userService,
-            IPluginLoader pluginLoader)
+            IPluginLoader pluginLoader,
+            ILogger logger)
         {
             HttpClient = client;
             UserService = userService;
             PluginLoader = pluginLoader;
+            Logger = logger;
         }
 
         public IUserService UserService { get; }
@@ -23,6 +25,8 @@ namespace Panacea.Core
         public IPluginLoader PluginLoader { get; }
 
         public IHttpClient HttpClient { get; }
+
+        public ILogger Logger { get; }
 
     }
 }
