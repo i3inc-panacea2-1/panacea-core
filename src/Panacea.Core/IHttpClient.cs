@@ -23,6 +23,8 @@ namespace Panacea.Core
 
         string RelativeToAbsoluteUri(string path);
 
+        string GetApiEndpoint(string path);
+
         Task<byte[]> DownloadDataAsync(string url, CancellationTokenSource cts = null);
     }
 
