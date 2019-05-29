@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,12 +13,14 @@ namespace Panacea.Core
             IHttpClient client,
             IUserService userService,
             IPluginLoader pluginLoader,
-            ILogger logger)
+            ILogger logger,
+            IWebSocket webSocket)
         {
-            HttpClient = client;
-            UserService = userService;
-            PluginLoader = pluginLoader;
-            Logger = logger;
+            HttpClient = client ?? throw new ArgumentException("client");
+            UserService = userService ?? throw new ArgumentException("userService");
+            PluginLoader = pluginLoader ?? throw new ArgumentException("pluginLoader");
+            Logger = logger ?? throw new ArgumentException("logger");
+            WebSocket = webSocket ?? throw new ArgumentException("webSocket");
         }
 
         public IUserService UserService { get; }
@@ -28,5 +31,6 @@ namespace Panacea.Core
 
         public ILogger Logger { get; }
 
+        public IWebSocket WebSocket { get; }
     }
 }
