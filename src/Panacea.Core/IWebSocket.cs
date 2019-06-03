@@ -13,5 +13,7 @@ namespace Panacea.Core
         void Remove(string verb, object action);
 
         void Emit<T>(string verb, T obj, bool addToQueue = true);
+        void PopularNotify(string pluginName, string modelName, string id, string userID = "");
+        void PopularNotifyPage(string pluginName, string itemAction = null, string modelName = "", string id = "", string userID = "");
     }
 }
