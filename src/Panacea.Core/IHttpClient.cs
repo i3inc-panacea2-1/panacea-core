@@ -17,6 +17,13 @@ namespace Panacea.Core
                 bool allowCache = true,
                 CancellationTokenSource cts = null);
 
+        Task<string> GetStringAsync(
+            string url,
+            List<KeyValuePair<string, string>> postData = null,
+            Dictionary<string, byte[]> files = null,
+            bool allowCache = true,
+            CancellationTokenSource cts = null);
+
         Task<ServerResponse<T>> SetCookieAsync<T>(string name, T data);
 
         Task<ServerResponse<T>> GetCookieAsync<T>(string name);
