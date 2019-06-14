@@ -48,5 +48,9 @@ namespace Panacea.Core
         /// <typeparam name="T"></typeparam>
         /// <returns></returns>
         T GetPlugin<T>() where T : IPlugin;
+
+        event EventHandler LoadStarting;
+
+        event EventHandler LoadFinished;
     }
 }
