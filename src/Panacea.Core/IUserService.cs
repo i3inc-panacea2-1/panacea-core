@@ -17,8 +17,7 @@ namespace Panacea.Core
         Task<bool> LoginAsync(string email, string password);
         Task<bool> LoginAsync(string cardId);
         Task<bool> UpdateUserInfoAsync(string firstName, string lastName, string phoneNumber);
+        Task<string> ChangePasswordAsync(string email, DateTime dateOfBirth);
     }
-
     public delegate Task UserEvent(IUser user);
-
 }
