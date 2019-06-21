@@ -14,13 +14,15 @@ namespace Panacea.Core
             IUserService userService,
             IPluginLoader pluginLoader,
             ILogger logger,
-            IWebSocket webSocket)
+            IWebSocket webSocket,
+            ISerializer serializer)
         {
             HttpClient = client ?? throw new ArgumentException("client");
             UserService = userService ?? throw new ArgumentException("userService");
             PluginLoader = pluginLoader ?? throw new ArgumentException("pluginLoader");
             Logger = logger ?? throw new ArgumentException("logger");
             WebSocket = webSocket ?? throw new ArgumentException("webSocket");
+            serializer = serializer ?? throw new ArgumentException("serializer");
         }
 
         public IUserService UserService { get; }
@@ -32,5 +34,7 @@ namespace Panacea.Core
         public ILogger Logger { get; }
 
         public IWebSocket WebSocket { get; }
+
+        public ISerializer Serializer { get; }
     }
 }
