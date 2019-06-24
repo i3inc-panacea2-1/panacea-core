@@ -22,7 +22,7 @@ namespace Panacea.Core
             PluginLoader = pluginLoader ?? throw new ArgumentException("pluginLoader");
             Logger = logger ?? throw new ArgumentException("logger");
             WebSocket = webSocket ?? throw new ArgumentException("webSocket");
-            serializer = serializer ?? throw new ArgumentException("serializer");
+            Serializer = serializer ?? throw new ArgumentException("serializer");
         }
 
         public IUserService UserService { get; }
