@@ -61,6 +61,7 @@
     <Compile Include="ISettingsProvider.cs" />
     <Compile Include="IUserService.cs" />
     <Compile Include="IWebSocket.cs" />
+    <Compile Include="PanaceaInjectAttribute.cs" />
     <Compile Include="PanaceaServices.cs" />
     <Compile Include="PluginNotLoadedException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
