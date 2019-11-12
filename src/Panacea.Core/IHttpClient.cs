@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -35,21 +34,15 @@ namespace Panacea.Core
         Task<byte[]> DownloadDataAsync(string url, CancellationTokenSource cts = null);
     }
 
-    [DataContract]
-    public class ServerResponse
+    public abstract class ServerResponse
     {
-        [DataMember(Name = "success")]
-        public Boolean Success { get; set; }
+        public virtual bool Success { get; set; }
 
-        [DataMember(Name = "error")]
-        public string Error { get; set; }
+        public virtual string Error { get; set; }
     }
 
-
-    [DataContract]
-    public class ServerResponse<T> : ServerResponse
+    public abstract class ServerResponse<T> : ServerResponse
     {
-        [DataMember(Name = "result")]
-        public T Result { get; set; }
+        public virtual T Result { get; set; }
     }
 }
