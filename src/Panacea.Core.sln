@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29503.13
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panacea.Core", "Panacea.Core\Panacea.Core.csproj", "{E1FC55CE-6792-4F0B-BEAE-A1A7AD68C35F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Panacea.Core", "Panacea.Core\Panacea.Core.csproj", "{26E260E1-1DAD-4412-BC37-C4B352BC30A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E1FC55CE-6792-4F0B-BEAE-A1A7AD68C35F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E1FC55CE-6792-4F0B-BEAE-A1A7AD68C35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E1FC55CE-6792-4F0B-BEAE-A1A7AD68C35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E1FC55CE-6792-4F0B-BEAE-A1A7AD68C35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26E260E1-1DAD-4412-BC37-C4B352BC30A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E260E1-1DAD-4412-BC37-C4B352BC30A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E260E1-1DAD-4412-BC37-C4B352BC30A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E260E1-1DAD-4412-BC37-C4B352BC30A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {83AC8407-314D-43FA-BF02-376F1094F87A}
+		SolutionGuid = {B7336A4C-DCE6-4FD9-93E9-6194B0409A0E}
 	EndGlobalSection
 EndGlobal
